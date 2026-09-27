@@ -36,7 +36,7 @@ supervisorctl restart app
 重启后看日志确认插件生效:
 
 ```
-tg_cleanup: patches installed (v0.2.0)
+tg_cleanup: patches installed (v1.0.0)
 ```
 
 > ⚠️ 别用 `qwenpaw plugin install` 热装 —— 会触发 host channel 重载,导致 Telegram 双 polling 实例抢 `getUpdates`(HTTP 409 Conflict),必须重启 host 才干净。
@@ -120,7 +120,7 @@ supervisorctl restart app
 Check the log to confirm:
 
 ```
-tg_cleanup: patches installed (v0.2.0)
+tg_cleanup: patches installed (v1.0.0)
 ```
 
 > ⚠️ Do NOT use `qwenpaw plugin install` hot-install — it reloads the channel and causes dual polling instances fighting over `getUpdates` (HTTP 409 Conflict). A host restart is the clean way.

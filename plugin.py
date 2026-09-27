@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
-"""TG Intermediate Cleanup plugin (v0.2.0).
+"""TG Intermediate Cleanup plugin (v1.0.0).
 
 Telegram: after the final answer has been sent, automatically delete all
 intermediate process messages (💭 reasoning, tool-call info, tool results,
 intermediate cards/media) so the chat only keeps the final reply.
 
-v0.2.0 changes
+v1.0.0 changes
 --------------
+(v1.0.0 is the first open-source release; renumbered from v0.2.0,
+same code.)
 - Unit typing: every message unit produced during a request is recorded
   with a kind ("answer-stream" / "message" / "process-stream" / "notice").
   Cleanup keeps the LAST answer-like unit and anything appended after it
@@ -544,7 +546,7 @@ def _install_patches():
         return
 
     _INSTALLED = True
-    logger.info("tg_cleanup: patches installed (v0.2.0)")
+    logger.info("tg_cleanup: patches installed (v1.0.0)")
 
 
 def _uninstall_patches():

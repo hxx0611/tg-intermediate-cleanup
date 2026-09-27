@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Simulate framework lifecycle against the patched plugin logic (v0.2.0)."""
+"""Simulate framework lifecycle against the patched plugin logic (v1.0.0)."""
 import asyncio
 import importlib.util
 import pathlib
