@@ -1,0 +1,29 @@
+{
+  "id": "tg-intermediate-cleanup",
+  "name": "TG Intermediate Cleanup",
+  "version": "0.2.0",
+  "type": "hook",
+  "description": "Telegram: 最终结果发出后自动删除思考/工具调用/中间媒体卡片等过程消息，只保留最终答案（含其配图）；降级通知不再顶掉答案；删除失败自动重试或折叠为…；安装预检+失败安全，防止框架升级后误删。运行时 monkey-patch，qwenpaw 升级不受影响。",
+  "description_i18n": {
+    "zh-CN": "Telegram 中间过程消息自动清理 v0.2.0：最终结果发出后自动删除 💭思考、工具调用、中间图片/文件/卡片等过程消息，只保留最终答案及其媒体；出错/取消保留现场；框架接口变动时失效保护（宁可不清理，绝不误删答案）。",
+    "en-US": "Telegram intermediate message cleanup v0.2.0: after the final reply is sent, automatically delete thinking/tool-call progress messages including intermediate media and cards, keeping the final answer and its attached media. Errors/cancellations preserve the scene. Fail-safe: skips cleanup when the answer cannot be identified instead of risking deletion."
+  },
+  "author": "hxx0611",
+  "entry": {
+    "backend": "plugin.py"
+  },
+  "qwenpaw_version": {
+    "min": "2.2.0",
+    "max": "3.0.0"
+  },
+  "meta": {
+    "category": "channel",
+    "features": [
+      "unit-kinds",
+      "media-card-cleanup",
+      "delete-retry-collapse",
+      "install-preflight",
+      "fail-safe-keep"
+    ]
+  }
+}

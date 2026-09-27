@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Backups
+*.bak
+*.bak-*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
