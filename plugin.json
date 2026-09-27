@@ -14,7 +14,7 @@
   },
   "qwenpaw_version": {
     "min": "2.2.0",
-    "max": "3.0.0"
+    "max": "2.3.0"
   },
   "meta": {
     "category": "channel",

@@ -67,7 +67,7 @@ Telegram channel 用占位消息(原地编辑)和普通 `send()` 展示流式进
 删除失败会降级成"编辑成 …",消息内容被折叠。
 
 **Q: 环境要求?**
-QwenPaw 2.2.0 ~ 3.0.0,Python 3.10+(只在 3.11 实测)。
+QwenPaw 2.2.x(≥ 2.2.0,< 2.3.0),Python 3.10+(只在 3.11 实测)。
 
 ## 🧪 测试
 
@@ -151,7 +151,7 @@ No. The answer unit (with its media) is always kept — that's the plugin's top 
 Failed deletes fall back to collapsing the message into "…".
 
 **Q: Requirements?**
-QwenPaw 2.2.0 ~ 3.0.0, Python 3.10+ (tested on 3.11 only).
+QwenPaw 2.2.x (>= 2.2.0, < 2.3.0), Python 3.10+ (tested on 3.11 only).
 
 ## 🧪 Tests
 
